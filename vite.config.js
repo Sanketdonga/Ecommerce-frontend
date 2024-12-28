@@ -10,4 +10,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "./", // Ensure relative paths for assets in the dist folder
+  build: {
+    outDir: "dist", // Ensure the output folder is "dist"
+  },
 });
