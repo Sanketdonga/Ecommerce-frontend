@@ -14,4 +14,8 @@ export default defineConfig({
   build: {
     outDir: "dist", // Ensure the output folder is "dist"
   },
+  server: {
+    host: "0.0.0.0", // Expose the server on all network interfaces
+    port: 5173, // You can change the port if necessary
+  },
 });
