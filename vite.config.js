@@ -16,7 +16,7 @@ export default defineConfig({
   },
   server: {
     host: "0.0.0.0", // Expose the server on all network interfaces
-    port: 80, // You can change the port if necessary
+    port: 5173, // You can change the port if necessary
     proxy: {
       "/api": {
         target: "http://52.66.113.158:5000", // Backend server URL
