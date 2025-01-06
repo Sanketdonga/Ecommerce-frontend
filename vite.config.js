@@ -19,7 +19,7 @@ export default defineConfig({
     port: 5173, // You can change the port if necessary
     proxy: {
       "/api": {
-        target: "http://my-shopping-app.shop:5000", // Backend server URL
+        target: "http://52.66.113.158:5000", // Backend server URL
         changeOrigin: true, // Ensure the origin matches the target
         rewrite: (path) => path.replace(/^\/api/, "/api"), // Optional: Path rewrite
       },
